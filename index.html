@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>BRFOX · Quotes</title>
+<style>
+  :root {
+    --bg: #0b0b10;
+    --card-bg: #13131b;
+    --accent: #b37aff;
+    --accent-soft: rgba(179,122,255,0.18);
+    --text-main: #f5f5f7;
+    --text-muted: #a0a0b3;
+    --border: #252538;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+   /* background: radial-gradient(circle at top, #1b1b2b 0, #050509 55%);*/
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 24px;
+    color: var(--text-main);
+  }
+
+  .quote-card {
+    width: 100%;
+    max-width: 680px;
+    background: radial-gradient(circle at top left, #1f172a 0, #111118 55%);
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+    padding: 22px 26px 20px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .card-pill {
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .quote-block {
+    margin-bottom: 26px;
+  }
+
+  .quote-text {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .quote-author {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .divider {
+    height: 2px;
+    margin: 22px 0;
+    position: relative;
+    background: linear-gradient(90deg, transparent, rgba(179,122,255,0.25), transparent);
+  }
+
+  .star {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(179,122,255,1);
+  }
+
+  @media(max-width: 560px) {
+    .quote-card {
+      padding: 18px 18px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="quote-card">
+  
+  <div class="card-header">
+    <div class="card-pill">quotes</div>
+  </div>
+
+  <!-- ЦИТАТА 1 -->
+  <div class="quote-block">
+    <div class="quote-text">
+      Шэнь Цинцю рывком сел на кровати с грацией ожившего трупа.
+    </div>
+    <div class="quote-author">Мосян Тунсю</div>
+  </div>
+
+  <div class="divider"><div class="star"></div></div>
+
+  <!-- ЦИТАТА 2 -->
+  <div class="quote-block">
+    <div class="quote-text">
+      — Что это с ним? — озадаченно спросил Вай Сянцзы, отступив назад.  
+      — Несварение? — предположил Ши Фэнми.  
+      Лэн Шуан мрачно добавил:  
+      — Я даже знаю кем.
+    </div>
+    <div class="quote-author">Моргана Маро, «Цветы пиона на снегу»</div>
+  </div>
+
+</div>
+
+</body>
+</html>
